@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Rimouski';
+    src: url('fonts/rimouski\ sb.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rimouski';
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Main Wrapper around all the sections */
+.main{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+
+/* Navbar Styling */
+.navbar h1{
+    font-size: 50px;
+    transform: translateX(90px) translateY(4px);
+}
+
+
+/* Favourite section Button Styling*/
+.fav-button{
+    width: 2.5%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    border: 3px solid orange;
+    padding: 5px;
+    border-radius: 20%;
+    cursor: pointer;
+    min-width:45px ;
+}
+
+.fav-button:hover{
+    border-color: black;
+}
+
+.fav-button p{
+    right: -15px;
+    top:-18px;
+}
+/*  */
+
+
+
+
+
+/* SearchBar Styling in Navbar */
+#search-input{
+    width: 15%;
+    height:40px;
+}
+
+
+
+
+
+/* Styling for header Quote */
+#meal-slogan{
+    width: 100%;
+    height: 30vh; 
+    text-align: center;
+}
+
+#meal-slogan h1{
+    color: gray;
+    font-size: 70px;
+    transition: ease-in-out 1.5s;
+    padding: 0;
+    margin: 0;
+    transform: translateY(70px);
+}
+
+#meal-slogan h1::after{
+    content: "-";
+    display: block;
+    color: black;
+    transform: scaleX(20);
+    margin-top: 5px;
+    
+}
+.slogan{
+    font-style: italic;
+}
+/*  */
+
+
+
+
+
+
+/* Styling For MEALS displaying conatiner */
+
+#meals-container{
+    width: 80%;
+    transform: translateX(190px) translateY(60px);
+    gap:20px;
+}
+
+
+/* Main Quote Styling */
+#meals-container h6{
+    width: 100%;
+    height: 50px;
+    color: grey;
+    font-style: italic;
+}
+
+/* Meal Detail Right Side Meal Origin */
+#dish-detail-title h6:nth-last-child(1){
+    margin-top:-30px;
+    color: grey;
+    font-style: italic;
+}
+
+
+/* Favourite Container Styling*/
+
+#favourite-container{
+    position: fixed;
+    top: 0;
+    width: 24%;
+    height: 100vh;
+    padding-left:20px;
+    background-color: white;
+}
+
+#First{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#close{
+    width: 60px;
+    height: 50px;
+}
+#close i{
+    font-size: 60px;
+    color: orange;
+    cursor: pointer;
+}
+
+#close i:hover{
+    color: black;
+}
+
+.favourite-item{
+    width:85%
+}
+
+#favourite-container::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+/* Track */
+#favourite-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle */
+#favourite-container::-webkit-scrollbar-thumb {
+    background: orange; /* Color of the scrollbar handle */
+}
+
+/* Handle on hover */
+#favourite-container::-webkit-scrollbar-thumb:hover {
+    background: darkorange; /* Color of the scrollbar handle on hover */
+}
+
+/*  */

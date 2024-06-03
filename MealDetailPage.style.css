@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Rimouski';
+    src: url('fonts/rimouski\ sb.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rimouski';
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Main Wrapper around all the sections */
+.main{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+/* Navbar Styling */
+.navbar h1{
+    font-size: 50px;
+    transform: translateY(-15px);
+}
+
+
+/* Seperator Between NavBar and Food Deatail Container */
+
+
+#line{
+    margin-top: -40px;
+    margin-bottom: 20px;
+    width: 55%;
+    height: 0.1vh;
+    background-color: lightgrey;
+}
+
+
+/* Food Detail Container */
+
+#foodDetail-container{
+    width: 90%;
+    height: 80vh;
+    overflow-y: auto;
+    border: 2px solid orange;
+}
+
+#foodDetail-container::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+/* Track */
+#foodDetail-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle */
+#foodDetail-container::-webkit-scrollbar-thumb {
+    background: orange; /* Color of the scrollbar handle */
+}
+
+/* Handle on hover */
+#foodDetail-container::-webkit-scrollbar-thumb:hover {
+    background: darkorange; /* Color of the scrollbar handle on hover */
+}
+
+#foodItem{
+    text-align: center;
+    display: flex;
+}
+
+#foodItem button{
+    margin-bottom: 20px;
+}
+
